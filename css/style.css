@@ -3,24 +3,22 @@
 #header {
     background-color: #28397F;
     color: #f6ad42;
-    padding: 20px 0;
+    padding: 30px 0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Adjusted to push title and home button to opposite ends */
     align-items: center;
     width: 100%;
     box-shadow: 0 4px 2px -2px gray;
 }
 #titleCon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #title {
     font-size: 34px;
     font-weight: bold;
 }
-
 html {
     background-image: url('../image/csBackground.png');
     background-size: cover;
@@ -67,7 +65,11 @@ html {
     background-color: rgba(255, 255, 255, 0.9);
     border: 1px solid #000000;
     width: 90%;
-    height: 15vw;
+    height: 13vw;
+    box-sizing: border-box;
+}
+.bioContainer:hover {
+    border: 2px solid #000000;
 }
 .bio, .links {
     width: 48%;
