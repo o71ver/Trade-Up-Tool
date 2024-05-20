@@ -1,15 +1,70 @@
 #homeButton {
-    position: absolute; /* Position the home button absolutely */
-    right: 20px; /* Adjust as needed */
+    position: absolute;
+    right: 20px;
     width: 40px;
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 #homeButton img {
     max-width: 100%;
     max-height: 100%;
     cursor: pointer;
+}
+
+/*--Input containers--*/
+#inputContainer {
+    display: flex;
+    height: 60vh;
+    margin-top: 10px;
+}
+.input {
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+    border: 1px solid black;
+    background-color: rgba(240, 248, 255, 0.6);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 18%; /* Set a fixed height for the input boxes */
+    gap: 10px;
+    max-height: calc(100% - 20px);
+    overflow-y: auto;
+}
+
+/*--Input boxes for the inputskins--*/
+.inputBox {
+    border: 1px dotted black;
+    background-color: rgba(128, 128, 128, 0.5);
+    white-space: nowrap;
+}
+.inputCell {
+    margin-top: 6%;
+    margin-left: 6%;
+}
+.SkinNumTitle {
+    font-size: 25px;
+}
+.SkinNumTitle, .valueInput, .multiplyerInput {
+    display: inline-block;
+}
+/*--Input_boxes_in_skin_input_boxes--*/
+/*--Input Values--*/
+.valueInput::-webkit-inner-spin-button,
+.valueInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.valueInput {
+    width: 15%;
+    height: 20px;
+    margin-left: 5%;
+}
+/*--Input Multiplyer*/
+.multiplyerInput {
+    background-color: gray;
+    height: 20px;
+    width: 9%;
+    margin-left: 5%;
 }
