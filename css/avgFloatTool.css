@@ -68,3 +68,45 @@
     width: 9%;
     margin-left: 5%;
 }
+
+/*--OutputSkins--*/
+.valueOutput::-webkit-inner-spin-button,
+.valueOutput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.valueOutput {
+    width: 15%;
+    height: 20px;
+    margin-left: 5%;
+}
+.outputBox {
+    border: 1px dotted black;
+    background-color: rgba(128, 128, 128, 0.5);
+    white-space: nowrap;
+}
+/*--quality output selecter--*/
+.outputQualityContainer {
+    position: relative;
+    display: inline-block;
+}
+.qualityOptions {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.qualityOptions div {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+.qualityOptions div:hover {
+    background-color: #f1f1f1;
+}
+.outputQualityContainer:hover .qualityOptions {
+    display: block;
+}
